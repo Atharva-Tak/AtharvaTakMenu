@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Shawarma</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <style>
+        body{
+            min-width: 400px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        main{
+            display: grid;
+            grid-template-rows: auto repeat(4,auto);
+        }
+        .h{
+            text-align: center;
+            margin: 0px 10px;
+            padding:10px;
+            border-bottom: 7px solid cornflowerblue;
+            border-radius: 20px;
+            align-self: center;
+        }
+        .item1,.item2,.item3,.item4{
+            border-bottom: 6px solid rgb(160, 160, 162);
+            background-color:whitesmoke;
+            border-radius: 20px;
+        }
+        .item1:hover,.item2:hover,.item3:hover,.item4:hover{
+            animation: ease-in;
+            transform: scale(1.05);
+        }
+        .item1,.item3{
+            margin:10px;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            grid-template-columns:auto 3fr;
+            grid-gap:3px;
+            border-right: 6px solid rgb(160, 160, 162);
+            height: auto;
+        }
+        .item2,.item4{
+            margin:10px;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            grid-template-columns:3fr auto;
+            grid-gap:3px;
+            border-left: 6px solid rgb(160, 160, 162);
+            height:auto;
+        }
+        .n{
+            padding: 10px;
+            background-color:rgb(232, 197, 131);
+            border-bottom: 5px solid rgb(135, 106, 54);
+            border-radius: 10px;
+        }
+        .c{
+            font-size: large;
+            margin: 10px;
+            padding: 10px;
+            border: 2px dashed orange;
+            border-radius: 20px;
+            outline: 2px dashed gray;
+            outline-offset: 2px;
+            height: auto;
+        }
+        .img{
+            margin: 5px;
+        }
+        .imgc{
+            border-right:5px solid rgba(0, 0, 0, 0.271);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main style="background-color: orange;outline: 1px solid rgb(249, 224, 177);outline-offset: 20px;">
+        <div class="h" style="background-color: rgb(255, 230, 0);">
+                <img class="d-inline-block" src="assets/img/gallery/collageShawarma.jpg" alt="logo" style="height: 100px;width:100px; border:5px solid rgba(0, 0, 0, 0.284);border-radius: 20px;"/>
+                <span class="text-500 fs-4 fw-bold ms-3 text-gradient" style="text-decoration: dashed;  vertical-align: middle; background-color:rgb(249, 224, 177);">Shawarma Section</span>
+        </div>
+        <div class="item1" >
+            <div class="n" style="grid-column: span 2;">
+                <img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo" style="height: 50px;"/>
+                <span class="text-1000 fs-4 fw-bold ms-3 text-gradient" style="vertical-align: middle;">Paneer Shawarma</span>
+            </div>
+            <div class="img">
+                <img src="assets/img/gallery/paneershawar.jpg" alt="veggiPizza" class="imgc" style="height: 170px;align-self: center;justify-self: center;">
+            </div>
+            <div class="c">
+                Try our Paneer Shawarma - filled with spicy grilled paneer, fresh veggies, and creamy sauces wrapped in soft pita!
+                 <br><br><sub style="color: orangered;">10% Off</sub><br><b>Only At <span style="text-decoration: line-through;">199</span> 179/-</b><br>
+                 <a href="index.html#home" style="width: 50px;height:100px;background-color: orange;border-radius: 10px;border-bottom: 3px solid rgb(140, 91, 1);"> Order Now&gt; </a>
+            </div>  
+        </div>
+        <div class="item2">
+            <div class="n" style="text-align: end;grid-column: span 2;">
+                <span class="text-1000 fs-4 fw-bold ms-3 text-gradient" style="vertical-align: middle;">Chicken Shawarma</span>
+                <img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo" style="height: 50px;"/>
+            </div>
+            <div class="c">
+                Try our Chicken Shawarma - loaded with juicy grilled chicken, crisp veggies, and flavorful sauces in a warm, soft wrap!
+                  <br><br><sub style="color: orangered;">10% Off</sub><br><b>Only At <span style="text-decoration: line-through;">299</span> 269/-</b><br>
+                 <a href="index.html#home" style="width: 50px;height:100px;background-color: orange;border-radius: 10px;border-bottom: 3px solid rgb(140, 91, 1);"> Order Now&gt; </a>
+            </div>
+            <div class="img">
+               <img src="assets/img/gallery/shawarma.jpg" alt="veggiPizza" class="imgc" style="height: 170px;align-self: center;justify-self: center;">
+            </div>
+        </div>
+        <div class="item3">
+            <div class="n" style="grid-column: span 2;">
+                <img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo" style="height: 50px;"/>
+                <span class="text-1000 fs-4 fw-bold ms-0 text-gradient" style="vertical-align: middle;">Chicken Tikka Shawarma</span>
+            </div>
+            <div class="img">
+                <img src="assets/img/gallery/chikentikkashawarma.jpg" alt="veggiPizza" class="imgc" style="height: 170px;align-self: center;justify-self: center;">
+            </div>
+            <div class="c">
+               Try our Chicken Tikka Shawarma - packed with smoky tikka chicken, fresh veggies, and creamy sauces in a soft wrap!
+                 <br><br><sub style="color: orangered;">10% Off</sub><br><b>Only At <span style="text-decoration: line-through;">349</span> 309/-</b><br>
+                 <a href="index.html#home" style="width: 50px;height:100px;background-color: orange;border-radius: 10px;border-bottom: 3px solid rgb(140, 91, 1);"> Order Now&gt; </a>
+            </div>
+        </div>
+        <div class="item4">
+            <div class="n" style="text-align: end;grid-column: span 2;">
+                <span class="text-1000 fs-3 fw-bold ms-1 text-gradient" style="vertical-align: middle;">Original Turkish Shawarma</span>
+                <img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo" style="height: 50px;"/>
+            </div>
+            <div class="c">
+                Try our Original Turkish Shawarma - authentic, tender meat shaved fresh and wrapped with veggies and sauces in a soft, warm flatbread!
+                   <br><br><sub style="color: orangered;">10% Off</sub><br><b>Only At <span style="text-decoration: line-through;">399</span> 359/-</b><br>
+                 <a href="index.html#home" style="width: 50px;height:100px;background-color: orange;border-radius: 10px;border-bottom: 3px solid rgb(140, 91, 1);"> Order Now&gt; </a>
+            </div>
+            <div class="img">
+                <img src="assets/img/gallery/originalshawarma.jpg" alt="veggiPizza" class="imgc" style="height: 170px;align-self: center;justify-self: center;">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

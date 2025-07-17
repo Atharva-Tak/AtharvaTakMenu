@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Wagon Menu</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <style>
+        body{
+            min-width: 400px;
+            max-width: 750px;
+            margin: auto;
+        }
+        .menu{
+            border-radius: 20px;
+            outline: 1px double rgba(255, 98, 0, 0.775);
+            outline-offset: 20px;
+            background-color: orange;
+        }
+        .s1{
+            grid-column: 1 / 3;
+            text-align: center;
+            padding:10px;
+            background-color: rgb(254, 233, 1);
+            border-bottom: 5px solid cornflowerblue;
+            border-radius: 20px;
+        }
+        ul{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 50px;
+        }
+        .s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9{
+            margin: 10px;
+            padding: 20px;
+            background-color:whitesmoke;
+            border: 2px dashed rgba(248, 147, 46, 0.615);
+            outline: 2px dashed gray;
+            outline-offset: 5px;
+            border-radius: 20px;
+        }
+        .itrs{
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: 3fr 1fr;
+        }
+        a{
+            height:fit-content;
+        }
+        a:hover{
+            transform:scale(1.05);
+        }
+        .responsive{
+            margin: 20px;
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,5fr));
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 10px 10px;
+        }
+        .h{
+            background-color:rgb(232, 197, 131);
+            border-bottom: 5px solid rgb(135, 106, 54);
+            border-radius: 10px;
+            height: 55px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="s1">
+                <img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo"/>
+                <span class="text-500 fs-4 fw-bold ms-3 text-gradient" style="text-decoration: dashed;vertical-align: middle;">Menu</span>
+        </div>
+        <div class="responsive">
+            <a href="pizza.html" target="_self">
+                <div class="s2">
+                    <div class="h"><img class="d-inline-block" src="assets/img/gallery/pizza.png" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                    <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Pizzas:</span></div>
+                    <div class="itrs">
+                        <div class="it1">Veggie Pizza.</div>
+                        <div class="p1">149/-</div>
+                        <div class="it1">Margareta Pizza</div>
+                        <div class="p1">200/-</div>
+                        <div class="it1">Paneer Pizza.</div>
+                        <div class="p1">299/-</div>
+                        <div class="it1">Chicken Pizza.</div>
+                        <div class="p1">349/-</div>
+                    </div>
+                </div>
+            </a>
+            <a href="burger.html" target="_self">
+                <div class="s3">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/burger.png" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Burgers:</span></div>
+                <div class="itrs">
+                    <div class="it1">Veggie Burger.</div>
+                    <div class="p1">149/-</div>
+                    <div class="it1">Paneer Blast Burger</div>
+                    <div class="p1">249/-</div>
+                    <div class="it1">Chicken Tower Burger.</div>
+                    <div class="p1">299/-</div>
+                    <div class="it1">Chicken Maharaja Burger.</div>
+                    <div class="p1">399/-</div>
+                </div>
+            </div>
+            </a>
+            <a href="noodle.html" target="_self">
+                <div class="s4">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/noodles.png" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Noodles:</span></div>
+                <div class="itrs">
+                    <div class="it1">Thai Noodles.</div>
+                    <div class="p1">199/-</div>
+                    <div class="it1">Choimin Noodles.</div>
+                    <div class="p1">99/-</div>
+                    <div class="it1">Japanese Noodles.</div>
+                    <div class="p1">349/-</div>
+                    <div class="it1">Chinese Noodles.</div>
+                    <div class="p1">249/-</div>
+                </div>
+            </div>
+            </a>
+            <a href="biryani.html" target="_self">
+                <div class="s5">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/biryani.jpg" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Biryanis:</span></div>
+                <div class="itrs">
+                    <div class="it1">Veg Pulav.</div>
+                    <div class="p1">199/-</div>
+                    <div class="it1">Chicken Biryani.</div>
+                    <div class="p1">399/-</div>
+                    <div class="it1">Mutton Biryani.</div>
+                    <div class="p1">349/-</div>
+                    <div class="it1">Dam Biryani.</div>
+                    <div class="p1">379/-</div>
+                </div>
+            </div>
+            </a>
+            <a href="shawarma.html" target="_self">
+                <div class="s6">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/shawarma.jpg" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Shawarmas:</span></div>
+                <div class="itrs">
+                    <div class="it1">Paneer Shawarma.</div>
+                    <div class="p1">199/-</div>
+                    <div class="it1">Chicken Shawarma.</div>
+                    <div class="p1">299/-</div>
+                    <div class="it1">Chicken Tikka Shawarma.</div>
+                    <div class="p1">349/-</div>
+                    <div class="it1">Original Turkish Shawarma.</div>
+                    <div class="p1">399/-</div>
+                </div>
+            </div>
+            </a>
+            <a href="Sandwich.html" target="_self">
+                <div class="s7">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/sub-sandwich.png" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Sandwiches:</span></div>
+                <div class="itrs">
+                    <div class="it1">Mayo Sandwich.</div>
+                    <div class="p1">79/-</div>
+                    <div class="it1">American PB&J.</div>
+                    <div class="p1">119/-</div>
+                    <div class="it1">Grilled Cheese Sandwich.</div>
+                    <div class="p1">129/-</div>
+                    <div class="it1">Crispy Sandwich.</div>
+                    <div class="p1">79/-</div>
+                </div>
+            </div>
+            </a>
+            <a href="drinks.html" target="_self">
+                <div class="s8">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/dalgonacoffe.jpg" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Drinks:</span></div>
+                <div class="itrs">
+                    <div class="it1">Dalgona Coffee.</div>
+                    <div class="p1">30/-</div>
+                    <div class="it1">Latte.</div>
+                    <div class="p1">40/-</div>
+                    <div class="it1">Apple Juice.</div>
+                    <div class="p1">20/-</div>
+                    <div class="it1">Strawberry Smoothie.</div>
+                    <div class="p1">40/-</div>
+                </div>
+            </div>
+            </a>
+            <a href="desserts.html" target="_self">
+                <div class="s9">
+                <div class="h"><img class="d-inline-block" src="assets/img/gallery/dalgonacandy.jpg" alt="logo" style="width: 40px;height: 40px; border-radius: 20px;"/>
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient" style="vertical-align: middle;">Desserts:</span></div>
+                <div class="itrs">
+                    <div class="it1">Toffe's Cake.</div>
+                    <div class="p1">339/-</div>
+                    <div class="it1">DanCake.</div>
+                    <div class="p1">169/-</div>
+                    <div class="it1">Choco Lava Cake.</div>
+                    <div class="p1">249/-</div>
+                    <div class="it1">Dalgona Candy.</div>
+                    <div class="p1">149/-</div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
